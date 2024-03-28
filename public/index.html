@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quickie | Sign up</title>
+</head>
+<body>
+    <!--Top-Section-->
+<section>
+    <ul>
+        <li><h1>Q<span>uickie</span></h1></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</section>
+
+    <!--EndTop-->
+
+    
+
+    <!--Sign up Form-->
+    <div class="parentContainer">
+        <form method="GET" action="login.html"  id="signupForm">
+            <ul>
+                <li><h1>Sign up<i class='bx bxs-key'></i></h1></li>
+                <li><i class='bx bx-user' ></i><input type="text" placeholder="First Name" id="UserFirstName" data-ALL="inps"> <input type="text" placeholder="Middle Initial" id="UserMiddleInitial" data-ALL="inps"> <input type="text" placeholder="Last Name" id="UserLastName" data-ALL="inps"> <input type="text" placeholder="Abbreviation(optional)" id="UserAbbreviation"  ></li>
+                <li><i class='bx bx-user-check' ></i><select id="Select" data-ALL="inps">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Prefer not to say</option>
+                </select><input type="text" placeholder="Occupation" id="UserOccupation" data-ALL="inps"></li>
+                <li><i class='bx bx-envelope' ></i><input type="email"  data-ALL="inps" placeholder="Example@gmail.com" id="Email-signup">
+                <ul id="error7">
+                    <li><h6>Email already in used, please type a new one.</h6></li>
+                </ul></li>
+                <li><i class='bx bx-calendar'></i><input type="date" id="Userdate-signup"  data-ALL="inps"></li>
+                <li><i class='bx bx-user-circle' ></i><input type="text" placeholder="Username.." id="User-signup"  data-ALL="inps"></li>
+                <li><i class='bx bx-lock-alt'></i><input type="password" placeholder="Password..." id="Userpass-signup"  data-ALL="inps">
+                    <!--error handler 1-->
+                <ul id="error2">
+                    <li><h6>Password must have 6-letters long or more.</h6></li>
+                </ul></li>
+                <li><i class='bx bx-phone' ></i><input type="tel" placeholder="Phone number(optional)" id="PhoneNumber"  ></li>
+                <li>
+              <i class='bx bx-shield' ></i><input type="text" id="pin" placeholder="18-Letter Pin"  data-value="User18PIN"  data-ALL="inps">
+            <ul id="error1">
+                <li><h6>Pin must have 18-letters or more.</h6></li>
+            </ul></li>
+               
+                <li><p>Note: You should <strong>REMEMBER YOUR PIN</strong>.</p></li>
+               
+                <li><button id="button-signup" value="submit">Sign up</button></li>
+                <li><p>Already have an account? <a href="login.html">Log in</a></p></li>
+            
+            </ul>
+
+
+
+        </form>
+    </div>
+    
+
+
+    <!--Sign up End-->
+
+   <script src="/public/authentication/LoginAUTH.js" type="module"></script>
+   <script src="/public/authentication/SignupAUTH.js" type="module"></script>
+   <script src="/public/authentication/logoutAUTH.js" type="module"></script>
+   <script src="https:/cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+   <script src="https:/www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+   <script src="/public/home/home.html"></script>
+
+   
+ 
+</body>
+</html>

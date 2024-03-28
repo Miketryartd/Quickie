@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="auth.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Quickie | Log in</title>
+</head>
+<body>
+    <!--Top-Section-->
+<section>
+    <ul>
+        <li><h1>Q<span>uickie</span></h1></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contacts</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
+</section>
+
+    <!--EndTop-->
+
+    <!--Sign up Form-->
+    <div class="parentContainer">
+        <form method="GET" action="home/home.html"  id="loginForm">
+            <ul>
+                <li><h1>Log in<i class='bx bxs-key'></i></h1>
+                <ul id="error6">
+                    <li><h4>Pin or Password is incorrect.</h4></li>
+                </ul></li>
+              
+                   
+                <li><i class='bx bx-envelope' ></i><input type="email"  data-ALL="inps" placeholder="Example@gmail.com" id="Email-login"></li>
+                <li><i class='bx bx-user-circle' ></i><input type="text" placeholder="Username.." id="User-login"  data-ALL="inps"></li>
+                <li><i class='bx bx-lock-alt'></i><input type="password" placeholder="Password..." id="Userpass-login"  data-ALL="inps">
+                <ul id="error3">
+                    <li><h6>Password must have 6-letters long or more.</h6></li>
+                </ul></li>
+                <li><i class='bx bx-phone' ></i><input type="tel" placeholder="Phone number(optional)" id="PhoneNumber"  ></li>
+                <li>
+              <i class='bx bx-shield' ></i><input type="text" id="pin" placeholder="18-Letter Pin"  data-value="User18PIN"  data-ALL="inps">
+              
+            <ul id="error4">
+                <li><h6>Pin must have 18-letters long or more.</h6></li>
+            </ul></li>
+               
+               
+                
+                <li><button id="button-signup" value="submit">Log in</button><ul id="error5">
+                    <li><h6>User does not exist, please sign up.</h6></li>
+                </ul></li>
+                <li><p>Don't have an account? <a href="index.html">Sign up</a></p></li>
+            
+            </ul>
+
+
+
+        </form>
+    </div>
+    
+
+
+    <!--Sign up End-->
+    <script src="/public/authentication/LoginAUTH.js" type="module"></script>
+   <script src="/public/authentication/SignupAUTH.js" type="module"></script>
+   <script src="/public/authentication/logoutAUTH.js" type="module"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.development.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+
+   <script src="/public/home/home.html"></script>
+
+   
+ 
+</body>
+</html>

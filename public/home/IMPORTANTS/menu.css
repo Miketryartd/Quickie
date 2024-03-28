@@ -1,0 +1,57 @@
+.profileMenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: fixed;
+    top: 25px;
+    z-index: 2000;
+    background-color: white;
+    right: 0;
+    margin: 20px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.142);
+    border-radius: 8px;
+}
+
+.profileMenu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.profileMenu ul li {
+    margin-bottom: 10px;
+}
+
+.profileMenu ul li button {
+    text-decoration: none;
+    color: black;
+    text-align: start;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 250px;
+    padding: 10px 10px;
+    transition: 0.1s ease;
+}
+.profileMenu ul li button:hover{
+    transition: 0.1s ease;
+    background-color: rgb(230, 225, 241);
+}
+
+.profileMenu ul li a {
+    color: black;
+    transition: 0.1s ease;
+    display: block; 
+    padding: 10px; 
+    box-sizing: border-box;
+}
+
+.profileMenu ul li a:hover {
+    transition: 0.1s ease;
+    background-color: rgb(230, 225, 241);
+}
+.profileMenu{
+    display: none;
+}
+
+
+/*dark mode*/

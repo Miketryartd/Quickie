@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="create.css">
+  
+    <title>Quickie | Create</title>
+</head>
+<body data-value="black">
+
+    <div class="sectionTop" data-value="mid"> 
+   
+        <ul>
+            <li><a href="/public/home/home.html">Quickie</a></li>       
+        </ul>
+    </div>
+    <!--TopSection RightSide-->
+    <div class="sectionTop1" data-value="mid">
+        <ul>
+            <li><button data-value="white"><i class='bx bx-bell' ></i></button></li>
+            <li><a href="/public/discover/discover.html"  data-value="white"><i class='bx bx-compass' ></i></a></li>
+            <li><a href="/public/message/Message.html" data-value="white"><i class='bx bx-message-rounded-dots' ></i></a></li>
+            <li><button><i class='bx bx-user-circle'  data-value="white" id="profileButton" onclick="profileFunction()"></i></button></li>
+        </ul>
+    </div>
+    <!--TopSection Middle-->
+    <div class="sectionTop2" data-value="mid">
+        <ul>
+            <li><button id="mobileMenu" onclick="mobileMenu()"  data-value="white"><i class='bx bx-menu' ></i></button></li>
+            <li><input type="search" placeholder="Search Quickie" id="searchInput"><span><i class='bx bx-search' ></i></span></li>
+            <li><h1>Q</h1></li>
+        </ul>
+    </div>
+
+
+
+     <!--UnderSection LeftSide-->
+     <div class="underSectionL" id="underSectionL" data-value="mid">
+        <ul>
+            <div class="menu1">
+            <li><a href="/public/home/home.html"  data-value="white"><i class='bx bx-home' ></i>Home</a></li>
+            <li><a href="/public/discover/discover.html"  data-value="white"><i class='bx bx-compass' ></i>Discover</a></li>
+            <li><a href="/public/profile/profile.html"  data-value="white"><i class='bx bx-user-circle'></i>Profile</a></li>
+            <li><a href="/public/friends/friends.html"  data-value="white"><i class='bx bx-group' ></i>Friends</a></li>
+        </div>
+        <div class="menu2">
+        <li><button id="Essentials">Essentialities</button></li>
+        <li><a href="/public/weather/weather.html"  data-value="white"><i class='bx bx-cloud' ></i>Weather</a></li>
+        <li><a href="note.html"  data-value="white"><i class='bx bx-notepad' ></i>Notes</a></li>
+       
+    </div>
+    <div class="menu3">
+    <li><h3>Policy</h3></li>
+    <li><a href="contentPolicy.html"  data-value="white">Content Policy</a></li>
+    <li><a href="privacyPolicy.html"  data-value="white">Privacy Policy</a></li>
+    <li><a href="#"  data-value="white">User Agreement</a></li>
+
+</div>
+<div class="menu4">
+<li><h3>About</h3></li>
+<li><a href="about.html"  data-value="white"><span>Q</span>About</a></li>
+<li><a href="feedback.html"  data-value="white"><i class='bx bx-message-rounded-edit' ></i>Feedback</a></li>
+<li><a href="help.html"  data-value="white"><i class='bx bx-info-circle' ></i>Help</a></li>
+       
+        </div>
+        </ul>
+        
+   </div>
+
+
+    <!--textarea & inputs-->
+    <div class="parentContainer">
+        <form id="submitForm" data-value="mid">
+            <ul>
+                <li><input type="text" placeholder="Title" id="titleInput" data-value="mid"></li>
+                <li><textarea id="content" name="content" data-value="mid"></textarea></li>
+                <li><input type="file" id="fileInput" data-value="mid"></li>
+                <li><button id="submitButton" type="submit">Post</button></li>
+            </ul>
+        </form>
+    </div>
+<!--profile MENUS-->
+
+<div class="profileMenu" id="profileMenu" data-value="mid">
+    <ul>
+        <li><a href="/public/profile/profile.html"  data-value="white">Name</a></li>
+        <li><button id="nightMode" onclick="nightMode()"  data-value="white"><i class='bx bx-moon' id="icon" ></i> Dark Mode</button></li>
+        <li><button id="SignOut"  data-value="white" onclick="logout()">Log Out</button></li>
+    </ul>
+</div>
+
+
+<!---footer-->
+<div class="footer">
+    <ul>
+       
+        <li><a href="#"  data-value="white">Quick © 2024</a>   -</li>
+        <li><a href="#"  data-value="white">No copyright</a></li> 
+    </ul>
+    
+    
+
+</div>
+
+
+
+<!--mobileFooter-->
+
+<div class="mobileFooter" data-value="black">
+    <ul>
+        <li><a href="/public/home/home.html" data-value="white"><i class='bx bx-home' ></i></a></li>
+        <li><a href="/public/discover/discover.html" data-value="white"><i class='bx bx-compass' ></i></a></li>
+        <li><a href="/public/Create/create.html" data-value="white"><i class='bx bx-plus' ></i></a></li>
+        <li><a href="/public/message/Message.html" data-value="white"><i class='bx bx-message-rounded-dots' ></i></a></li>
+        <li><button onclick="MobileprofileMenu('username')" id="mobileProfileMenu" data-value="white"><i class='bx bx-user-circle'></i></button></li>
+</div>
+
+
+
+
+      <!-- Import Firebase Authentication module -->
+   
+ 
+   <!-- Import  logout script -->
+ 
+   <!-- firebaseconfig scripts -->
+
+ 
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/9.6.5/firebase-storage.js" type="module"></script>
+   <script src="create.js"></script>
+   <script src="/public/discover/discover.js"></script>
+
+  <script src="/public/authentication/logoutAUTH.js"></script>
+  <script src="/public/home/home.js"></script>
+  
+
+
+   
+</body>
+</html>
